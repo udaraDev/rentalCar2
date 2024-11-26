@@ -1,9 +1,16 @@
+import 'package:build_car_rental_app_flutter/injection_container.dart';
 import 'package:build_car_rental_app_flutter/pressentation/pages/onboarding_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'data/model/car.dart';  // Nếu tên file là 'car.dart'
+
 import 'pressentation/pages/maps_details_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    // options : DefaultFirebaseOptions.currentPlatform
+  );
+  initInjection();
   runApp(MyApp());
 }
 
@@ -12,13 +19,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Tạo đối tượng Car để truyền vào
-    // Car yourCarObject = Car(
-    //   model: 'Toyota Camry',
-    //   distance: 150.0,
-    //   fuelCapacity: 50.0,
-    //   pricePerHour: 20.0,
-    // );
+
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
