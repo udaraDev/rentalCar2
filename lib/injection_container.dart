@@ -10,7 +10,8 @@ GetIt getIt = GetIt.instance;
 
 void initInjection(){
   try{
-  getIt.registerLazySingleton<FirebaseFirestore>(()=> FirebaseFirestore.instance);
+  getIt.registerLazySingleton<FirebaseFirestore>(
+          ()=> FirebaseFirestore.instance);
   getIt.registerLazySingleton<FirebaseCarDataSource>(
           ()=> FirebaseCarDataSource(firestore: getIt<FirebaseFirestore>())
   );
@@ -20,7 +21,8 @@ void initInjection(){
   getIt.registerLazySingleton<GetCars>(
           ()=> GetCars(getIt<CarRespository>())
   );
-  getIt.registerFactory(() => CarBloc(getCars: getIt<GetCars>())
+  getIt.registerFactory(
+          () => CarBloc(getCars: getIt<GetCars>())
   );
   }catch(e){
     throw e;

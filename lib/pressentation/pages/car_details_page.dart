@@ -9,8 +9,6 @@ import '../../data/model/car.dart';
 
 
 
-
-
 class CardDetailsPage extends StatefulWidget {
   final Car car;
 
