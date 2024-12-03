@@ -41,21 +41,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBJpNt75EPmKbcxr5OUjnA50n8MlQ-Znxg',
-    appId: '1:302045304360:web:72add38f743ed42826471d',
-    messagingSenderId: '302045304360',
-    projectId: 'flutter-car-rental-app-d02df',
-    authDomain: 'flutter-car-rental-app-d02df.firebaseapp.com',
-    storageBucket: 'flutter-car-rental-app-d02df.firebasestorage.app',
-    measurementId: 'G-WS2B8V0CN3',
+    apiKey: 'AIzaSyDDBpMrgxVq9_rx-i1s-xl0DqBol-rtvQA',
+    appId: '1:731866932091:web:15248581834f1c4b8953de',
+    messagingSenderId: '731866932091',
+    projectId: 'carrental-2d5e9',
+    authDomain: 'carrental-2d5e9.firebaseapp.com',
+    storageBucket: 'carrental-2d5e9.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB4Cyiz4_9eYy9weuluu-JDHJ7hgTGH294',
-    appId: '1:302045304360:android:be9ab96bf3994f0226471d',
-    messagingSenderId: '302045304360',
-    projectId: 'flutter-car-rental-app-d02df',
-    storageBucket: 'flutter-car-rental-app-d02df.firebasestorage.app',
+    apiKey: 'AIzaSyCPBkrzufoAnZmRaupJYGDVFkPoJwS5At0',
+    appId: '1:731866932091:android:5725c8af82eaee988953de',
+    messagingSenderId: '731866932091',
+    projectId: 'carrental-2d5e9',
+    storageBucket: 'carrental-2d5e9.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
