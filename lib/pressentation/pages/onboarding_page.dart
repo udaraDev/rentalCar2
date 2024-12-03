@@ -1,4 +1,5 @@
 import 'package:build_car_rental_app_flutter/pressentation/pages/car_list_screen.dart';
+import 'package:build_car_rental_app_flutter/pressentation/pages/login.dart';
 import 'package:flutter/material.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -45,18 +46,18 @@ class OnboardingPage extends StatelessWidget {
                   SizedBox(
                     height: 20,
                   ),
-            
                   SizedBox(
                     width: 320,
                     height: 54,
                     child: ElevatedButton(
                         onPressed: () {
-                          Navigator.of(context).pushAndRemoveUntil
-                            (MaterialPageRoute(builder: (context) => CarListScreen()),
-                                  (route)=> false);
-                         // Navigator.push
-                         //   (context, MaterialPageRoute(builder: (context)=>
-                         //     CarListScreen()));
+                          Navigator.of(context).pushAndRemoveUntil(
+                              MaterialPageRoute(
+                                  builder: (context) => const Login()),
+                              (route) => false);
+                          // Navigator.push
+                          //   (context, MaterialPageRoute(builder: (context)=>
+                          //     CarListScreen()));
                         },
                         style: ElevatedButton.styleFrom(
                           foregroundColor: Colors.black,
@@ -64,8 +65,8 @@ class OnboardingPage extends StatelessWidget {
                         ),
                         child: Text(
                           'Let\'s Go',
-                          style:
-                              TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
                         )),
                   ),
                 ],
