@@ -58,8 +58,6 @@ class _LoginState extends State<Login> {
                 height: 250.0,
                 width: 250.0,
                 decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("images/login.png"), fit: BoxFit.cover),
                   shape: BoxShape.circle,
                 ),
               ),
