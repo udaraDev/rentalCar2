@@ -4,6 +4,7 @@ import 'package:build_car_rental_app_flutter/pressentation/bloc/car_bloc.dart';
 import 'package:build_car_rental_app_flutter/pressentation/bloc/car_event.dart';
 import 'package:build_car_rental_app_flutter/pressentation/pages/login.dart';
 import 'package:build_car_rental_app_flutter/pressentation/pages/onboarding_page.dart';
+import 'package:build_car_rental_app_flutter/pressentation/pages/signup.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -25,11 +26,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (_) => getIt<CarBloc>()..add(LoadCars()),
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Car Rental App',
         // home: OnboardingPage(),
-        home: const Login(),
+        home: Login(),
       ),
     );
   }
